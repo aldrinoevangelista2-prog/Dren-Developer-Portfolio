@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dren - Developer Portfolio</title>
+    <link rel="stylesheet" href="Assets/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="#">Dren</a></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <p class="small-intro">Hello <span class="dot">.</span></p>
+                <h2 class="intro-name">I'm <span class="name-highlight">Aldrino</span></h2>
+                <div class="line"></div>
+                <h1 class="hero-role">Software Developer</h1>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-cta">Got a project?</a>
+                    <button type="button" id="resume-open" class="btn btn-outline">My resume</button>
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <h2>Resume</h2>
+                            <img src="Assets/image/resume.jpg" alt="Resume Image" class="resume-image">
+                            <button id="closeModal">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="profile-wrap" tabindex="0" aria-label="Profile image">
+                    
+                    <svg class="arrow arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M17 3l7 9-7 9" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <div class="ring"></div>
+                    <img src="Assets/image/profileimage.png" alt="Aldrino" class="profile-image">
+
+                   
+                    <svg class="arrow arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M7 21L0 12l7-9" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- skill tags strip  -->
+        <div class="skills-strip">
+            <div class="container">
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>React</li>
+                    <li>Git</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            
+            <div class="about-content about-grid">
+                <div class="about-left">
+                    <ul class="services">
+                        <li>
+                            <span class="service-icon">🕸️</span>
+                            <div>
+                                <h4>Website Development</h4>
+                                <p>Responsive, accessible sites built with modern tooling.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="service-icon">📱</span>
+                            <div>
+                                <h4>App Development</h4>
+                                <p>Frontend apps with great UX and performance.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="service-icon">☁️</span>
+                            <div>
+                                <h4>Website Hosting</h4>
+                                <p>Deploy, monitor, and scale web projects.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-right">
+                    <h3>About me</h3>
+                    <p>I'm Aldrino Evangelista, an aspiring software developer currently studying Information and Communication Technology. I’ve built a solid foundation in programming with Java, Python, and C++, and I’m driven by a genuine curiosity to learn and grow in the tech industry. My goal is to join a forward-thinking team where I can contribute meaningfully, continue learning, and evolve into a confident and capable developer.
+                    </p>
+                    <br>
+                    <p>
+                        Beyond coding, I’m passionate about problem-solving and continuously improving my skills. I’m excited to contribute to real-world projects and collaborate with experienced developers to further my growth in this dynamic field.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>3 <span class="plus">+</span></h4>
+                            <p>Completed Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h4>0 <span class="percent">%</span></h4>
+                            <p>Client satisfaction</p>
+                        </div>
+                        <div class="stat">
+                            <h4>1 <span class="plus">+</span></h4>
+                            <p>Years of experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Skillset  -->
+                    <div class="skillset centered-skillset">
+                        <h4>Skills</h4>
+                        <div class="skills-columns">
+                            <ul class="skills-bars">
+                                <li class="skill-card">
+                                    <div class="skill-line">
+                                        <span class="skill-name">HTML</span>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                    <div class="skill-track" aria-hidden="true">
+                                        <div class="skill-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="90"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-card">
+                                    <div class="skill-line">
+                                        <span class="skill-name">CSS</span>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                    <div class="skill-track" aria-hidden="true">
+                                        <div class="skill-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="85"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-card">
+                                    <div class="skill-line">
+                                        <span class="skill-name">JavaScript</span>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                    <div class="skill-track" aria-hidden="true">
+                                        <div class="skill-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="80"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-card">
+                                    <div class="skill-line">
+                                        <span class="skill-name">Java</span>
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                    <div class="skill-track" aria-hidden="true">
+                                        <div class="skill-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="75"></div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="skills-bars">
+                                <li class="skill-card">
+                                    <div class="skill-line">
+                                        <span class="skill-name">Teamwork &amp; Collaboration</span>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                    <div class="skill-track" aria-hidden="true">
+                                        <div class="skill-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="90"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-card">
+                                    <div class="skill-line">
+                                        <span class="skill-name">Critical Thinking</span>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                    <div class="skill-track" aria-hidden="true">
+                                        <div class="skill-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="80"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-card">
+                                    <div class="skill-line">
+                                        <span class="skill-name">Adaptability</span>
+                                        <span class="skill-percent">82%</span>
+                                    </div>
+                                    <div class="skill-track" aria-hidden="true">
+                                        <div class="skill-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="82"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-card">
+                                    <div class="skill-line">
+                                        <span class="skill-name">Creativity &amp; Innovation</span>
+                                        <span class="skill-percent">78%</span>
+                                    </div>
+                                    <div class="skill-track" aria-hidden="true">
+                                        <div class="skill-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-value="78"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>E-commerce</h3>
+                        <p> Created a basic website to demonstrate inventory management, cart operations, and transaction flow.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">html</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">View Code</a>
+                            <a href="#" class="link-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Basic Calculator</h3>
+                        <p>Simple Calculator Program – Developed a basic calculator using programming concepts to perform arithmetic operations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">html</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">View Code</a>
+                            <a href="#" class="link-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Arduino-Based Garbage Sorting Machine</h3>
+                        <p>Developed an Arduino-based machine to sort waste into recyclable and non-recyclable categories using sensors.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">html</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">View Code</a>
+                            <a href="#" class="link-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Have a project in mind? Let's talk!</p>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>aldrinoevangelista2@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="https://www.facebook.com/aldrino.evangelista.92/" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Dren. All rights reserved.</p>
+            
+        </div>
+    </footer>
+
+    <div id="toast" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="Assets/script.js">
+        
+    </script>
+</body>
+</html>
